@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 150px;
+    background-color: black;
+    color: white;
+}
+header nav{
+    height: 100%;
+}
+header ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+}
+ul a{
+    text-decoration: none;
+    color: white;
+}
