@@ -1,0 +1,26 @@
+{% extends 'index.html' %}
+{% block link %}
+    <link rel="stylesheet" href="../static/css/style3.css">
+    <title>Settings</title>
+{% endblock %}
+{% block body %}
+    <div class="box2">
+        <form action="{{ url_for('register_product') }}" method="post">
+            <div class="box2__item2">
+                <div class="box2__item2__time1">
+                    <p>Rasimni kiriting</p>
+                    <input type="file">
+                </div>
+                <div class="box2__item2__time2">
+                    <p>Nomini yozing</p>
+                    <input class="input" type="text" name="product_name" placeholder="Nomini yozish uchun bosing">
+                </div>
+                <div class="box2__item2__time3">
+                    <p>Narhni belgilang</p>
+                    <input class="input" type="text" name="product_price" placeholder="Narhini belgilash uchun bosing">
+                </div>
+                <button>Register</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}
